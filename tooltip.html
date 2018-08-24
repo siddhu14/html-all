@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>tooltip</title>
+        <style>
+            .tooltip{
+                  position: relative;
+                  background: red;
+                  color: #ffffff;
+                  width: 150px;
+                  text-align: center;
+                  text-transform: uppercase;
+                  font-weight: bold;
+            }
+            .tooltip-text{
+                font-weight: normal;
+                color: #cccccc;
+                background: yellow;
+                visibility: hidden;
+            }
+            .tooltip:hover,.tooltip-text{
+                visibility: visible;
+                position: absolute;
+                top: 0px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="tooltip">
+            welcome
+            <span class="tooltip-text">Welcome to tool tip</span>
+        </div>
+    </body>
+</html>
